@@ -1,0 +1,97 @@
+.f-page {
+  @media only screen and (max-width: 720px) {
+    padding-top: 0;
+  }
+  > .container {
+    @media only screen and (max-width: 720px) {
+      padding: 0;
+    }
+  }
+}
+.f-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @media only screen and (max-width: 720px) {
+    flex-direction: column;
+    gap: 0;
+  }
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+  > * {
+    flex-basis: 100%;
+  }
+  .f-img-container {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 720px) {
+      height: 380px;
+    }
+    &.img-a {
+      background: radial-gradient(ellipse at center, #2472ba 0%, #041760 100%);
+    }
+    &.img-b {
+      background: radial-gradient(ellipse at center, #2a558e 0%, #1c3571 100%);
+    }
+    &.img-c {
+      background: radial-gradient(ellipse at center, #5c84ff 0%, #485eba 100%);
+    }
+    &.img-d {
+      background: radial-gradient(ellipse at center, #4846a5 0%, #24126a 100%);
+    }
+    &.img-e {
+      background: radial-gradient(ellipse at center, #2472ba 0%, #041760 100%);
+    }
+    &.img-f {
+      background: radial-gradient(ellipse at center, #3a9bd5 0%, #2573ba 100%);
+    }
+    &.img-g {
+      background: radial-gradient(ellipse at center, #2a558e 0%, #1c3571 100%);
+    }
+  }
+  .f-box-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media only screen and (max-width: 720px) {
+      padding: 0 20px;
+      min-height: 380px;
+    }
+    .title {
+      font-size: 30px;
+    }
+    .description {
+      font-size: 20px;
+      margin: 40px 0;
+    }
+    .primary-btn {
+      width: 250px;
+    }
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+    @media only screen and (max-width: 720px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.interest {
+  &.green-bg {
+    background-color: #00bf9a;
+    padding: 90px 0;
+    .lg-title {
+      color: var(--clr-main-100);
+    }
+    .registration-btn {
+      background-color: var(--clr-main-100);
+      color: #00bf9a;
+    }
+  }
+}

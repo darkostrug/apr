@@ -1,0 +1,8 @@
+.about {
+  p {
+    &:not(:first-child) {
+      margin-top: 20px;
+      line-height: 24px;
+    }
+  }
+}

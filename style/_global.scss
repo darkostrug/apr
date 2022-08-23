@@ -1,0 +1,34 @@
+// Typography
+.fw-light {
+  font-weight: 300;
+}
+.fw-regular {
+  font-weight: 400;
+}
+.fw-medium {
+  font-weight: 500;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.fw-extrabold {
+  font-weight: 800;
+}
+.fw-black {
+  font-weight: 900;
+}
+.txt-center {
+  text-align: center;
+}
+// Colors
+:root {
+  --clr-main-100: #ffffff;
+  --clr-main-200: #f1f3f4;
+  --clr-main-300: #102746;
+  --clr-main-400: #1270ed;
+  --clr-main-500: #005595;
+  --clr-main-600: #00bf9a;
+}

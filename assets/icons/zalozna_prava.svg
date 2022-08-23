@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 2</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="003-Podaci" transform="translate(-195.000000, -1339.000000)" fill="#1270ED" fill-rule="nonzero">
+            <g id="Path-2" transform="translate(195.000000, 1339.000000)">
+                <path d="M19.8688889,0 C9.59111111,0 1.10888889,7.79333333 0,17.78 L15.4244444,17.78 L15.4244444,11.1133333 L26.5355556,20.0022222 L15.4244444,28.8911111 L15.4244444,22.2244444 L0.00222222222,22.2244444 C1.11333333,32.2088889 9.59333333,40 19.8688889,40 C30.8977778,40 39.8688889,31.0288889 39.8688889,20 C39.8688889,8.97111111 30.8977778,0 19.8688889,0 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

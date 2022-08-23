@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// General stuffs
+@import "./global";
+@import "./grid";
+@import "./typography";
+// Pages
+@import "../pages/home";
+@import "../pages/functionality";
+@import "../pages/about";
+@import "../pages/data";
+// Components
+@import "../components/header";
+@import "../components/footer";
+@import "../components/arrow-link";
+@import "../components/buttons";
+@import "../components/banner";
+@import "../components/counter";
+@import "../components/cards";
+@import "../components/navigation";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+section {
+  padding: 70px 0;
+  &.no-top-padding {
+    padding-top: 0;
+  }
+  &.no-bottom-padding {
+    padding-bottom: 0;
+  }
+}

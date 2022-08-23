@@ -1,0 +1,45 @@
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.registration-btn {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--clr-main-100);
+  padding: 15px 20px;
+  background-color: var(--clr-main-600);
+  border: 2px solid var(--clr-main-600);
+  text-decoration: none;
+  &::after {
+    content: "";
+    background: url(../assets/icons/registrujte_se.svg) no-repeat;
+    min-width: 20px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    margin-left: 35px;
+  }
+}
+.primary-btn {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--clr-main-400);
+  padding: 10px 20px;
+  border: 2px solid var(--clr-main-400);
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+.primary-btn-white {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--clr-main-100);
+  padding: 10px 20px;
+  border: 2px solid var(--clr-main-100);
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
