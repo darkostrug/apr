@@ -1,3 +1,6 @@
+.functionality-section {
+  padding-bottom: 0;
+}
 .article-card {
   .article-icon {
     width: 130px;
@@ -27,8 +30,8 @@
   .buttons-container {
     @media only screen and (max-width: 800px) {
       flex-direction: column;
-      a{
-        width: initial!important;
+      a {
+        width: initial !important;
       }
     }
     a {

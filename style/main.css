@@ -392,6 +392,10 @@
   line-height: 24px;
 }
 
+.functionality-section {
+  padding-bottom: 0;
+}
+
 .article-card .article-icon {
   width: 130px;
   aspect-ratio: 1/1;
@@ -591,6 +595,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.data-card ul li:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background: url(../assets/bx-check.svg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
 }
 
 .data-article-icon {
@@ -1280,14 +1297,58 @@ nav .navigation-wrapp .buttons-container {
   }
 }
 nav .burger-menu,
-nav .mobile-login {
+nav .mobile-login,
+nav .mobile-nav {
   display: none;
 }
 @media only screen and (max-width: 1300px) {
   nav .burger-menu,
-nav .mobile-login {
+nav .mobile-login,
+nav .mobile-nav {
     display: initial;
   }
+}
+
+.mobile-nav {
+  display: initial;
+  transform: translateX(-100%);
+  transition: 0.2s linear;
+  position: fixed;
+  background-color: #1d4171;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+}
+.mobile-nav.active {
+  transform: translateX(0);
+}
+.mobile-nav .mobile-nav-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.mobile-nav .mobile-nav-headline i {
+  font-size: 30px;
+}
+.mobile-nav ul {
+  margin-top: 40px;
+  padding: 20px;
+}
+.mobile-nav ul > li {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.mobile-nav ul > li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.mobile-nav ul > li a.active {
+  color: #00bf9a;
 }
 
 *,

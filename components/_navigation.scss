@@ -36,10 +36,52 @@ nav {
     }
   }
   .burger-menu,
-  .mobile-login {
+  .mobile-login,
+  .mobile-nav {
     display: none;
     @media only screen and (max-width: 1300px) {
       display: initial;
+    }
+  }
+}
+
+.mobile-nav {
+  display: initial;
+  transform: translateX(-100%);
+  transition: 0.2s linear;
+  position: fixed;
+  background-color: #1d4171;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  &.active {
+    transform: translateX(0);
+  }
+  .mobile-nav-headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    i {
+      font-size: 30px;
+    }
+  }
+  ul {
+    margin-top: 40px;
+    padding: 20px;
+    > li {
+      padding: 10px 0;
+      display: flex;justify-content: center;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        &.active {
+          color: #00bf9a;
+        }
+      }
     }
   }
 }
