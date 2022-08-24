@@ -10,6 +10,7 @@
 @import "../pages/about";
 @import "../pages/data";
 @import "../pages/kontakt";
+@import "../pages/plans";
 // Components
 @import "../components/header";
 @import "../components/footer";
@@ -80,7 +81,7 @@ video {
 }
 
 section {
-  padding: 70px 0;
+  padding: 100px 0;
   &.no-top-padding {
     padding-top: 0;
   }

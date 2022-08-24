@@ -1,0 +1,141 @@
+.plans-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  @media only screen and (max-width: 1220px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  > * {
+    flex-basis: 100%;
+  }
+  .plan-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f3f4;
+    padding: 50px 20px 20px;
+    text-align: center;
+    .name {
+      font-size: 26px;
+      margin-bottom: 5px;
+      color: #1d4271;
+    }
+    .label {
+      color: #1d4271;
+      font-weight: 400;
+    }
+    .value {
+      color: #00bf9a;
+      font-size: 46px;
+      margin: 30px 0 20px;
+    }
+    .description-txt {
+      font-size: 14px;
+      margin-bottom: 50px;
+      font-weight: 500;
+    }
+    ul {
+      margin-bottom: 50px;
+      li {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        &:not(:first-child) {
+          margin-top: 5px;
+        }
+        &:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background: url(../assets/icons/ima.svg) no-repeat center;
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .most-popular {
+    border: 2px solid #1270ed;
+    position: relative;
+    &::before {
+      content: "Најпопуларније";
+      color: #fff;
+      position: absolute;
+      background: #1270ed;
+      width: calc(100% + 4px);
+      text-transform: uppercase;
+      height: 35px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -37px;
+    }
+  }
+}
+
+.plans-table {
+  h2 {
+    font-size: 26px;
+    color: #1d4271;
+    margin-bottom: 40px;
+  }
+  .table {
+    overflow-x: auto;
+    .row {
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+
+      &:nth-child(odd) {
+        .col {
+          background-color: #f1f3f47d;
+        }
+      }
+      .col {
+        background-color: #f1f3f4;
+        font-size: 18px;
+        font-weight: 600;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        min-width: 150px;
+        @media only screen and (max-width: 1250px) {
+            font-size: 16px;
+          }
+        &.name {
+          justify-content: flex-start;
+          min-width: 300px;
+        }
+      }
+      &.header {
+        .col {
+          color: #fff;
+          background-color: #1d4271;
+        }
+      }
+    }
+    .check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      &.yes {
+        background: url(../assets/icons/ima.svg) no-repeat center;
+      }
+      &.no {
+        background: url(../assets/icons/nema.svg) no-repeat center;
+      }
+    }
+  }
+}

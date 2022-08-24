@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .fw-light {
   font-weight: 300;
@@ -695,6 +696,147 @@
   background: url(../assets/bx-check.svg);
 }
 
+.plans-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media only screen and (max-width: 1220px) {
+  .plans-cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .plans-cards-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.plans-cards-container > * {
+  flex-basis: 100%;
+}
+.plans-cards-container .plan-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f3f4;
+  padding: 50px 20px 20px;
+  text-align: center;
+}
+.plans-cards-container .plan-card .name {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #1d4271;
+}
+.plans-cards-container .plan-card .label {
+  color: #1d4271;
+  font-weight: 400;
+}
+.plans-cards-container .plan-card .value {
+  color: #00bf9a;
+  font-size: 46px;
+  margin: 30px 0 20px;
+}
+.plans-cards-container .plan-card .description-txt {
+  font-size: 14px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.plans-cards-container .plan-card ul {
+  margin-bottom: 50px;
+}
+.plans-cards-container .plan-card ul li {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.plans-cards-container .plan-card ul li:not(:first-child) {
+  margin-top: 5px;
+}
+.plans-cards-container .plan-card ul li:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url(../assets/icons/ima.svg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.plans-cards-container .most-popular {
+  border: 2px solid #1270ed;
+  position: relative;
+}
+.plans-cards-container .most-popular::before {
+  content: "Најпопуларније";
+  color: #fff;
+  position: absolute;
+  background: #1270ed;
+  width: calc(100% + 4px);
+  text-transform: uppercase;
+  height: 35px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -37px;
+}
+
+.plans-table h2 {
+  font-size: 26px;
+  color: #1d4271;
+  margin-bottom: 40px;
+}
+.plans-table .table {
+  overflow-x: auto;
+}
+.plans-table .table .row {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+}
+.plans-table .table .row:nth-child(odd) .col {
+  background-color: rgba(241, 243, 244, 0.4901960784);
+}
+.plans-table .table .row .col {
+  background-color: #f1f3f4;
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  min-width: 150px;
+}
+@media only screen and (max-width: 1250px) {
+  .plans-table .table .row .col {
+    font-size: 16px;
+  }
+}
+.plans-table .table .row .col.name {
+  justify-content: flex-start;
+  min-width: 300px;
+}
+.plans-table .table .row.header .col {
+  color: #fff;
+  background-color: #1d4271;
+}
+.plans-table .table .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+.plans-table .table .check.yes {
+  background: url(../assets/icons/ima.svg) no-repeat center;
+}
+.plans-table .table .check.no {
+  background: url(../assets/icons/nema.svg) no-repeat center;
+}
+
 .main-header {
   position: relative;
   width: 100%;
@@ -1209,7 +1351,7 @@ video {
   }
 }
 section {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 section.no-top-padding {
   padding-top: 0;
