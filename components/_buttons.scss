@@ -21,6 +21,16 @@
     margin-left: 35px;
   }
 }
+.registration-btn-no-icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--clr-main-100) !important;
+  padding: 10px 20px;
+  background-color: var(--clr-main-600);
+  border: 2px solid var(--clr-main-600);
+  text-decoration: none;
+}
 .primary-btn {
   display: flex;
   align-items: center;
@@ -42,4 +52,23 @@
   display: inline-block;
   text-decoration: none;
   transition: 0.2s ease-in;
+}
+.lang-btn {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.358);
+  color: var(--clr-main-100);
+  padding: 10px 20px;
+  text-decoration: none;
+  &:after {
+    content: "";
+    background: url(../assets/bx-chevron-down.svg) center no-repeat;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
 }
